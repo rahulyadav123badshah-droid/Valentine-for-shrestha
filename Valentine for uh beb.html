@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Shrestha Ji 💖</title>
+</head>
+
+<body style="
+margin:0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+text-align:center;
+">
+
+<br><br><br>
+
+<!-- STEP 1 -->
+<div id="step1">
+<h1>🌸 Hello Shrestha Ji 🌸</h1>
+
+<p style="font-size:18px; padding:15px;">
+💌 Main tumse bahut din se ek baat bolna chahta tha…
+</p>
+
+<button type="button" onclick="openStep2()" style="
+padding:14px 32px;
+font-size:17px;
+border:none;
+border-radius:30px;
+background:#ff4b5c;
+color:white;
+cursor:pointer;
+">
+Tap Here 💖
+</button>
+</div>
+
+<!-- STEP 2 -->
+<div id="step2" style="display:none; margin-top:70px;">
+<p style="font-size:20px; padding:20px;">
+✨ Tum is duniya ki sabse khubsurat ladki ho  
+<br>jisko maine dekha hai 💖
+</p>
+
+<p style="font-size:18px;">
+Tumhari smile 😊  
+tumhari simplicity 🌸  
+tumhari presence ✨
+</p>
+
+<button type="button" onclick="openStep3()" style="
+margin-top:25px;
+padding:12px 30px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:#6c5ce7;
+color:white;
+cursor:pointer;
+">
+Aage dekho 👀
+</button>
+</div>
+
+<!-- STEP 3 -->
+<div id="step3" style="display:none; margin-top:80px;">
+<h2 style="font-weight:normal;">💖 I Love You Shrestha Ji 💖</h2>
+
+<p style="font-size:18px;">
+Dil se, bina kisi shart ke 🫶
+</p>
+
+<button type="button" onclick="openStep4()" style="
+margin-top:25px;
+padding:12px 30px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:#fd79a8;
+color:white;
+cursor:pointer;
+">
+Ek sawaal hai ❣️
+</button>
+</div>
+
+<!-- STEP 4 -->
+<div id="step4" style="display:none; margin-top:90px; padding:25px;">
+<p style="font-size:20px; line-height:1.7;">
+🌸 Shrestha Ji,  
+<br><br>
+Yeh sirf ek proposal nahi,  
+balki woh ehsaas hai  
+jo kaafi waqt se dil me tha 💖  
+<br><br>
+Kya aap meri zindagi ka  
+sabse khoobsurat safar  
+mere saath shuru karna chaahengi? ✨
+</p>
+
+<br>
+
+<button type="button" onclick="yesClicked()" style="
+padding:14px 34px;
+font-size:17px;
+border:none;
+border-radius:30px;
+background:#2ecc71;
+color:white;
+cursor:pointer;
+">
+YES 💖
+</button>
+
+&nbsp;&nbsp;&nbsp;
+
+<button type="button" id="noBtn" onclick="moveNo()" style="
+padding:14px 34px;
+font-size:17px;
+border:none;
+border-radius:30px;
+background:#e74c3c;
+color:white;
+cursor:pointer;
+position:relative;
+">
+NO 🙈
+</button>
+</div>
+
+<!-- SHAYARI -->
+<div id="shayari" style="display:none; margin-top:100px; padding:30px;">
+<h2 style="font-weight:normal;">💌 For You, Shrestha Ji 💌</h2>
+
+<p style="font-size:19px; line-height:1.8;">
+🌹 Tumhara saath ho toh  
+zindagi kisi kahani si lagti hai  
+<br><br>
+✨ Na koi shart,  
+na koi shikayat,  
+bas tumhara ehsaas kaafi hai  
+<br><br>
+🫶 Har kal me  
+tumhari jagah  
+hamesha khaas rahegi 💖
+</p>
+
+<p style="font-size:20px; margin-top:30px;">
+Happy Valentine’s Day 🌹✨
+</p>
+</div>
+
+<br><br><br>
+
+<p style="font-size:14px; color:#444;">
+Created By Rahul ❤️
+</p>
+
+<script>
+function openStep2(){
+    document.getElementById("step2").style.display="block";
+    document.getElementById("step2").scrollIntoView({behavior:"smooth"});
+}
+
+function openStep3(){
+    document.getElementById("step3").style.display="block";
+    document.getElementById("step3").scrollIntoView({behavior:"smooth"});
+}
+
+function openStep4(){
+    document.getElementById("step4").style.display="block";
+    document.getElementById("step4").scrollIntoView({behavior:"smooth"});
+}
+
+function yesClicked(){
+    document.getElementById("shayari").style.display="block";
+    document.getElementById("shayari").scrollIntoView({behavior:"smooth"});
+}
+
+function moveNo(){
+    let btn = document.getElementById("noBtn");
+    btn.style.position="absolute";
+    btn.style.left = Math.random()*70 + "%";
+    btn.style.top = Math.random()*70 + "%";
+}
+</script>
+
+</body>
+</html>
